@@ -67,10 +67,6 @@ function appendGalleryMarkup({ hits }) {
   clearTotalHits();
 }
 
-window.addEventListener('scroll', () => {
-  scrollByDown(buttonLoadMore);
-});
-
 function showTotalHits() {
   newsApiService.fetchImages().then(response => {
     newsApiService.totalHits = response.totalHits;

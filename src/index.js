@@ -95,11 +95,3 @@ function hideButtonEndImages() {
   buttonLoadMore.hide();
   return Notiflix.Notify.warning("We're sorry, but you've reached the end of search results.");
 }
-
-function scrollByDown() {
-  const cardHeight = gallery.firstElementChild.getBoundingClientRect();
-  window.scrollBy({
-    top: cardHeight.y * -2,
-    behavior: 'smooth',
-  });
-}
